@@ -1,0 +1,13 @@
+n = int(input())
+l = len(str(n))
+temp=n
+sum = 0
+while temp!=0:
+    temp = temp%10
+    sum = sum+temp**l
+    temp=temp//10
+    
+if n == sum:
+    print("Yes armstrong")    
+else:
+    print("not")
