@@ -1,0 +1,7 @@
+num = input()
+num_array = [int(x) for x in str(num)]
+ans_array = num_array[::-1]
+num=0
+for i in ans_array:
+    num = num*10+i
+print(num)
